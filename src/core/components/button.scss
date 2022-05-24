@@ -9,7 +9,8 @@
     padding: 1rem;
     width: 100%;
     height: 4rem;
-    border: 1px solid $secondary_color_white;
+    border: none;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
     &::before {
       content: "";
       height: 2.9rem;
@@ -23,6 +24,7 @@
     }
     &:hover {
       transition: 0.25s ease-in all;
+      border: 1px solid $secondary_color_white;
       background-color: $primay_color_black;
       color: $secondary_color_white;
     }

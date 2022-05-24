@@ -1,10 +1,10 @@
 import React from "react";
 import "./button.scss";
 
-const CustomButton = () => {
+const CustomButton = ({ label = "SAVE" }) => {
   return (
     <div className='custom-button-container'>
-      <button type='submit'>SAVE</button>
+      <button type='submit'>{label}</button>
     </div>
   );
 };
