@@ -2,7 +2,7 @@
 
 .home-image-container {
   position: relative;
-  height: 60vh;
+  height: $background_image_height;
   z-index: -1;
   background-image: url("../../images/center_pic.png");
   background-repeat: no-repeat;
