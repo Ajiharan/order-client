@@ -11,12 +11,12 @@
     position: fixed;
     top: 10px;
     z-index: 100;
-    width: 90%;
+    width: $navbar_max_width;
     background-color: $secondary_color_white;
     box-shadow: 2px 2px 0px 1px #e7e2e2;
 
     @media screen and (min-width: $window_resize_min) {
-      width: 75%;
+      width: $navbar_min_width;
     }
     .navbar-container {
       width: 100%;
@@ -43,7 +43,7 @@
         );
 
         img {
-          width: 6rem;
+          width: $navbar_logo_width;
           height: fit-content;
         }
       }
