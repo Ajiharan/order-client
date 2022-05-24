@@ -13,9 +13,8 @@
     z-index: 100;
     width: $navbar_max_width;
     background-color: $secondary_color_white;
-    box-shadow: 2px 2px 0px 1px #e7e2e2;
 
-    @media screen and (min-width: $window_resize_min) {
+    @media screen and (min-width: $window_resize_max) {
       width: $navbar_min_width;
     }
     .navbar-container {
@@ -54,6 +53,7 @@
         );
         P {
           margin: 0 0.5rem;
+          font-weight: 700;
         }
       }
     }

@@ -16,7 +16,7 @@ const InterestForm = ({ formik }) => {
           name={"cars"}
           placeholder={"cars"}
           type={"check"}
-          label='cars'
+          label='Cars'
         />
       </Grid>
       <Grid item xs={2}>
@@ -29,7 +29,7 @@ const InterestForm = ({ formik }) => {
           name={"books"}
           placeholder={"books"}
           type={"check"}
-          label='books'
+          label='Books'
         />
       </Grid>
       <Grid item xs={2}>
@@ -42,7 +42,7 @@ const InterestForm = ({ formik }) => {
           name={"watches"}
           placeholder={"watches"}
           type={"check"}
-          label='watches'
+          label='Watches'
         />
       </Grid>
       <Grid item xs={2}>
@@ -55,7 +55,7 @@ const InterestForm = ({ formik }) => {
           name={"laptops"}
           placeholder={"laptops"}
           type={"check"}
-          label='laptops'
+          label='Laptops'
         />
       </Grid>
     </React.Fragment>

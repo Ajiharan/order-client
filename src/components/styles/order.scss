@@ -3,12 +3,15 @@
 
 .order-container {
   margin-top: 3rem;
-  padding: 1rem 3.5rem;
+  padding: 1rem 5rem;
   color: $secondary_color_white;
   &-form {
     &-title {
       margin: 1rem 0;
     }
+  }
+  @media screen and (min-width: $window_resize_max) {
+    padding: 1rem 15rem;
   }
 }
 .collapse-straight-line {

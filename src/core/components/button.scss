@@ -22,6 +22,7 @@
       transform: rotate(20deg);
     }
     &:hover {
+      transition: 0.25s ease-in all;
       background-color: $primay_color_black;
       color: $secondary_color_white;
     }

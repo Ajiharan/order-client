@@ -4,7 +4,7 @@ import "./button.scss";
 const CustomButton = () => {
   return (
     <div className='custom-button-container'>
-      <button type='submit'>save</button>
+      <button type='submit'>SAVE</button>
     </div>
   );
 };
