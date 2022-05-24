@@ -11,7 +11,7 @@ const TextGroup = ({ label, value }) => {
 };
 
 TextGroup.propTypes = {
-  label: PropTypes.string.isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   value: PropTypes.string.isRequired,
 };
 export default React.memo(TextGroup);

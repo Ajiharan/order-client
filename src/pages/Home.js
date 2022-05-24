@@ -8,7 +8,7 @@ import OrderView from "../components/OrderView";
 
 const Home = () => {
   return (
-    <div>
+    <div className='home-page-container'>
       <Navbar />
       <ImageContainer />
       <CustomThemeProvider>

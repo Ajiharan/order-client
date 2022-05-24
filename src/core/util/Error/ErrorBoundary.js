@@ -16,16 +16,10 @@ class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.errorInfo) {
-      // You can render any custom fallback UI
       return (
         <div style={{ overflowY: "scroll", height: "25vh" }}>
           <h2>Something went wrong.</h2>
-          <button
-            onClick={this.reloadPage}
-            className='btn btn-small btn-danger m-4'
-          >
-            Reoload Page
-          </button>
+          <button onClick={this.reloadPage}>Reoload Page</button>
 
           <details style={{ whiteSpace: "pre-wrap" }}>
             {this.state.error && this.state.error.toString()}
