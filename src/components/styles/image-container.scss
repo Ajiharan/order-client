@@ -1,0 +1,14 @@
+@import "../../core/styles/variables";
+
+.home-image-container {
+  position: relative;
+  height: $background_image_height;
+  z-index: -1;
+  background-image: url("../../images/center_pic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  @media screen and (min-width: $window_resize_min) {
+    background-image: url("../../images/center_pic_lazy.png");
+  }
+}
