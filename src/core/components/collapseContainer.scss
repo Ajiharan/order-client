@@ -1,0 +1,14 @@
+@import "../../core/styles/colors";
+@import "../../core/styles/mixins";
+
+.collapse-container {
+  @include customCollapseContainer(
+    $primay_color_black,
+    $secondary_color_white,
+    20rem
+  );
+
+  P {
+    margin: 0 0.5rem;
+  }
+}

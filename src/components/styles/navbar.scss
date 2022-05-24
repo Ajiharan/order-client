@@ -1,0 +1,61 @@
+@import "../../core/styles/colors";
+@import "../../core/styles/variables";
+@import "../../core/styles/mixins";
+
+.navbar-container-layout {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .navbar-container-wrapper {
+    position: fixed;
+    top: 10px;
+    z-index: 100;
+    width: $navbar_max_width;
+    background-color: $secondary_color_white;
+    box-shadow: 2px 2px 0px 1px #e7e2e2;
+
+    @media screen and (min-width: $window_resize_min) {
+      width: $navbar_min_width;
+    }
+    .navbar-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      overflow: hidden;
+
+      .icon-wrapper-container {
+        display: flex;
+
+        span {
+          margin-right: 2px;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &-center {
+        @include navbarContainerStyle(
+          $secondary_color_white,
+          $primay_color_black,
+          5rem
+        );
+
+        img {
+          width: $navbar_logo_width;
+          height: fit-content;
+        }
+      }
+      &-right {
+        @include navbarContainerStyle(
+          $secondary_color_white,
+          $primay_color_black
+        );
+        P {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+}
