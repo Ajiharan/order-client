@@ -1,0 +1,29 @@
+@import "../../core/styles/colors";
+
+.custom-button-container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 3rem;
+  button {
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid $secondary_color_white;
+    &::before {
+      content: "";
+      height: 2.9rem;
+      border: 1px solid $secondary_color_white;
+      padding: 1rem;
+      background-color: $primay_color_black;
+      position: absolute;
+      left: -12px;
+      bottom: 0;
+      transform: rotate(20deg);
+    }
+    &:hover {
+      background-color: $primay_color_black;
+      color: $secondary_color_white;
+    }
+  }
+}
