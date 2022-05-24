@@ -1,0 +1,11 @@
+@import "../../core/styles/colors";
+
+.order-view-container {
+  color: $secondary_color_white;
+  margin-top: 3rem;
+  padding: 1rem 3.5rem;
+  &-title {
+    margin: 1rem 0;
+    border-bottom: 1px solid $secondary_color_white;
+  }
+}
