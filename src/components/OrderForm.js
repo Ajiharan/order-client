@@ -6,13 +6,12 @@ import { selectAutoFillDetails } from "../state/autoField/autoFillSlice";
 import { getAutoFill } from "../state/autoField/autoFillAction";
 import FormGroup from "@mui/material/FormGroup";
 import CustomButton from "../core/components/CustomButton.js";
-
 import UserForm from "./UserForm.js";
 import AddressForm from "./AddressForm.js";
 import InterestForm from "./InterestForm";
-import "./styles/order.scss";
 import ErrorBoundary from "../core/util/Error/ErrorBoundary";
 import useValidation from "../core/util/validation/useValidation";
+import "./styles/order.scss";
 
 const OrderForm = () => {
   const [params, setParams] = useState(null);
@@ -32,7 +31,7 @@ const OrderForm = () => {
       country: countryName,
       limit: 5,
       format: "json",
-      apiKey: "ba6be736fe7e4bf98fe3400182432e32",
+      apiKey: process.env.REACT_APP_API_KEY,
     });
   }, [fieldValue, countryName]);
 
@@ -49,11 +48,7 @@ const OrderForm = () => {
   return (
     <div className='order-container'>
       <h2>{errorMsg}</h2>
-      <form
-        className='order-container-form'
-        id='frm'
-        onSubmit={formik.handleSubmit}
-      >
+      <form className='order-container-form' onSubmit={formik.handleSubmit}>
         <ErrorBoundary>
           <UserForm formik={formik} />
         </ErrorBoundary>

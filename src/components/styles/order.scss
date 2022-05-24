@@ -1,4 +1,5 @@
 @import "../../core/styles/colors";
+@import "../../core/styles/variables";
 
 .order-container {
   margin-top: 3rem;
@@ -12,7 +13,7 @@
 }
 .collapse-straight-line {
   margin-top: 4rem;
-  width: 180px;
+  width: $collapse_straightline_width;
   background-color: $secondary_color_white;
   height: 1px;
   transform: rotate(110deg);

@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import InputCheck from "../core/components/InputCheck";
 import PropTypes from "prop-types";
+
 const InterestForm = ({ formik }) => {
   return (
     <React.Fragment>

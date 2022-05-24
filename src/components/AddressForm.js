@@ -131,7 +131,7 @@ AddressForm.propTypes = {
   getCountries: PropTypes.func.isRequired,
   selectAutoFillDetails: PropTypes.any.isRequired,
   getAutoFill: PropTypes.func.isRequired,
-  params: PropTypes.object.isRequired,
+  params: PropTypes.object,
   onEventUpdate: PropTypes.func.isRequired,
 };
 export default AddressForm;

@@ -55,7 +55,7 @@ AutoCompleteField.propTypes = {
   baseUrl: PropTypes.string,
   selector: PropTypes.any.isRequired,
   dispatchFunc: PropTypes.func.isRequired,
-  params: PropTypes.object.isRequired,
+  params: PropTypes.object,
   onEventUpdate: PropTypes.func.isRequired,
 };
 
