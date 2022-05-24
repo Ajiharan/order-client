@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+@mixin navbarContainerStyle($background_color, $text_color, $width_size: 0) {
+  padding: $navbar_container_padding;
+  display: flex;
+  @if $width_size > 0 {
+    width: $width_size;
+  }
+  align-items: center;
+  background-color: $background_color;
+  color: $text_color;
+}
+
+@mixin customCollapseContainer(
+  $primay_color_black,
+  $secondary_color_white,
+  $width_size: 0
+) {
+  @include navbarContainerStyle(
+    $primay_color_black,
+    $secondary_color_white,
+    20rem
+  );
+  position: relative;
+  &::after {
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    right: -62px;
+    bottom: 0;
+    width: 34px;
+    background-color: $primay_color_black;
+    height: 138px;
+    border: 20px solid transparent;
+    transform: rotate(30deg);
+  }
+}
