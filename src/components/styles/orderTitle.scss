@@ -1,0 +1,27 @@
+@import "../../core/styles/colors";
+@import "../../core/styles/variables";
+
+.orderTitle-container {
+  overflow: hidden;
+  position: absolute;
+  width: 45rem;
+  bottom: -30px;
+  .collapse-container {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    width: 30rem;
+    color: $primay_color_black;
+    background-color: $secondary_color_white;
+    &::after {
+      background-color: $secondary_color_white;
+    }
+    @media screen and (min-width: $window_resize_min) {
+      width: 35rem;
+    }
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
