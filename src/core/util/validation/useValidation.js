@@ -52,7 +52,6 @@ const useValidation = (baseUrl, orderPath, addressPath, interestPath) => {
       !userDetailsError &&
       !userAddressError
     ) {
-      console.log("triggered");
       dispatch(setOrderSuccess(formData));
     }
   }, [
