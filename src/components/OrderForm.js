@@ -12,12 +12,13 @@ import InterestForm from "./InterestForm";
 import ErrorBoundary from "../core/util/Error/ErrorBoundary";
 import useValidation from "../core/util/validation/useValidation";
 import "./styles/order.scss";
+import { USER_DETAILS_BASE_URL } from "../core/util/services/APIBaseUrl";
 
 const OrderForm = () => {
   const [params, setParams] = useState(null);
   const { formik, errorMsg } = useValidation(
-    "https://c2dee09a-8189-4ac4-8267-efaee2721977.mock.pstmn.io",
-    "order",
+    USER_DETAILS_BASE_URL,
+    "user",
     "address",
     "interest"
   );

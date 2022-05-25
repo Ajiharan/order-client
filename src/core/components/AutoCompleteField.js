@@ -3,12 +3,13 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import useReduxService from "../util/services/useReduxService";
 import PropTypes from "prop-types";
+import { ADDRESS_BASE_URL } from "../util/services/APIBaseUrl";
 
 const AutoCompleteField = ({
   formik,
   name,
   placeholder,
-  baseUrl = "https://api.geoapify.com/v1/geocode/search",
+  baseUrl = ADDRESS_BASE_URL,
   selector,
   dispatchFunc,
   params,
