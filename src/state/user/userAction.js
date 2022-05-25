@@ -18,10 +18,20 @@ export const setUserDetail =
             data: res.data,
           })
         );
-        dispatch(setAddress(baseUrl, address.apiSection, address.data));
+        dispatch(
+          setAddress(baseUrl, address.apiSection, {
+            ...address.data,
+            uid: res.data?.uid,
+          })
+        );
 
         if (Object.values(interest.data).includes(true)) {
-          dispatch(setInterest(baseUrl, interest.apiSection, interest.data));
+          dispatch(
+            setInterest(baseUrl, interest.apiSection, {
+              ...interest.data,
+              uid: res.data?.uid,
+            })
+          );
         } else {
           dispatch(setInterestSuccess({ data: null }));
         }

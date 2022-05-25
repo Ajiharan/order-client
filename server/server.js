@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import morgan from "morgan";
 import mongoose from "mongoose";
 import { logger } from "./logs/logger.js";
-
+import OrderRouter from "./routers/OrderRouter.js";
 const app = express();
 app.use(express.json());
 dotenv.config();
@@ -20,12 +20,13 @@ mongoose.connect(URL, {
   useUnifiedTopology: true,
 });
 
+app.use("/", OrderRouter);
+
 const connection = mongoose.connection;
 connection.once("open", () => {
-  console.log("Mongodb connection successfully");
+  logger.info("Mongodb connection successfully");
 });
 
 app.listen(PORT, () => {
-  console.log(`port listen in ${PORT}`);
   logger.info(`port listen in ${PORT}`);
 });

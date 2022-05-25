@@ -3,12 +3,13 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import useReduxService from "../util/services/useReduxService";
 import PropTypes from "prop-types";
+import { COUNTRIES_BASE_URL } from "../util/services/APIBaseUrl";
 
 const SelectField = ({
   formik,
   name,
   placeholder,
-  baseUrl = "https://restcountries.com/v3.1/all",
+  baseUrl = COUNTRIES_BASE_URL,
   selector,
   dispatchFunc,
 }) => {
