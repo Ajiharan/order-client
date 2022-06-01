@@ -51,3 +51,7 @@ make sure to add **.env** file and the path in the root directory
 ![Screenshot (46)](https://user-images.githubusercontent.com/53114753/170185239-28b811e0-57f8-4baf-802c-2b17506d8419.png)
 
 ![Screenshot (47)](https://user-images.githubusercontent.com/53114753/170185241-1cbb6339-6af4-4f12-91de-ae17ce69b6ac.png)
+
+
+check with typescript version  & cypress with e2e testing
+https://github.com/Ajiharan/order-client-typescript
